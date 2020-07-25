@@ -1,0 +1,33 @@
+@import './styles/variables.scss';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 15px 0;
+}
+
+.task-container {
+  background: #fff;
+  margin: 130px 0 40px;
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+    0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  min-width: 230px;
+  max-width: 650px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.title {
+  width: 100%;
+  font-size: 80px;
+  font-weight: 300;
+  text-align: center;
+  color: $green-color;
+
+  @media screen and (max-width: $screen-tablet) {
+    font-size: 60px;
+  }
+}
+

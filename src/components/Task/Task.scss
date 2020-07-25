@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.task {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+  cursor: pointer;
+  z-index: 1;
+
+  &__done {
+    text-decoration: line-through;
+  }
+
+  &__delete-btn {
+    padding: 0 10px;
+    font-size: 22px;
+    background-color: $red-color;
+
+    &:hover {
+      background-color: $red-color-hover;
+    }
+  }
+}

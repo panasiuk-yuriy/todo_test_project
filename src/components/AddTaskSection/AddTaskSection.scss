@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.top {
+  margin-top: 20px;
+  
+  &__input-add {
+    width: 100%;
+    padding: 16px 16px 16px 40px;
+    background: rgba(0, 0, 0, 0.01);
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    
+    @media screen and (max-width: $screen-tablet) {
+      padding: 10px;
+    }
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__add-btn {
+    padding: 0 20px;
+    white-space: nowrap;
+    background-color: $green-color;
+
+    @media screen and (max-width: $screen-tablet) {
+      padding: 0 5px;
+    }
+    
+    &:disabled {
+      background-color: rgb(187, 187, 187);
+      cursor: default;
+    }
+
+    &:hover:enabled {
+      background-color: $green-color-hover;
+    }
+  }
+}

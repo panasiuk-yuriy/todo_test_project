@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.search {
+  max-width: 40%;
+  padding: 16px 16px 16px 40px;
+
+  @media screen and (max-width: $screen-tablet) {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+}
