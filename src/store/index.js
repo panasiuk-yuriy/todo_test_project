@@ -2,7 +2,7 @@ import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { createSelector } from 'reselect';
 import queryReducer from './query';
-import tasksReducer from './todos';
+import tasksReducer from './tasks';
 
 export const getTasksList = (state) => state.tasksList;
 export const getQuery = (state) => state.query;

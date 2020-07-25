@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { deleteTask , changeStatus } from '../../store/todos';
+import { deleteTask , changeStatus } from '../../store/tasks';
 import cn from 'classnames';
 import { Popup } from '../PopUp/PopUpWindow';
 

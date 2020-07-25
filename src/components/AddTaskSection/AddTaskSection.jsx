@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addTask } from '../../store/todos';
+import { addTask } from '../../store/tasks';
 import './AddTaskSection.scss';
 
 export const AddTaskSection = () => {
