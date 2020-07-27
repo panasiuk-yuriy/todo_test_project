@@ -7,7 +7,7 @@ export const Popup = ({ closePopup, confirmAction, text, name }) => {
   return (
     <div className='popup'>
       <div className='popup__inner'>
-        <h1 className='popup__message'>{`${text} "${name}"`}</h1>
+        <h1 className='popup__message'>{`${text} "${name}" ?`}</h1>
         <div className="popup__buttons">
           <button
             className='popup__confirm-btn btn'

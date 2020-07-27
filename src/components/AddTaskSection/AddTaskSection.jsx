@@ -9,7 +9,7 @@ export const AddTaskSection = () => {
   const dispatch = useDispatch();
 
   const handleSetName = (event) => {
-    setName(event.target.value.trimLeft())
+    setName(event.target.value.trimLeft().replace(/(\s{2,})/, ' '))
   };
 
   const handleSubmit = (event) => {
