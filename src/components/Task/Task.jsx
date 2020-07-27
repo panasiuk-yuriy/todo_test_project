@@ -3,11 +3,10 @@ import { useDispatch } from 'react-redux';
 import { deleteTask, changeStatus } from '../../store/tasks';
 import cn from 'classnames';
 import { Popup } from '../PopUp/PopUpWindow';
-
+import PropTypes from 'prop-types';
 import './Task.scss';
 
-export const Task = (props) => {
-  const { name, done, id } = props;
+export const Task = ({ name, done, id }) => {
 
   const dispatch = useDispatch();
   const [activeDelete, setActiveDelete] = useState(false);
@@ -33,8 +32,9 @@ export const Task = (props) => {
       </div>
       {activeDelete &&
         <Popup
+          open={activeDelete}
           name={name}
-          text='Do you realy want delete?'
+          text='Do you really want delete?'
           closePopup={() => setActiveDelete(false)}
           confirmAction={() => handleDelete(id)}
         />
@@ -42,3 +42,9 @@ export const Task = (props) => {
     </li>
   )
 }
+
+Task.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  done: PropTypes.bool.isRequired,
+};

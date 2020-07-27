@@ -1,7 +1,9 @@
 import React from 'react';
 import './Popup.scss';
+import PropTypes from 'prop-types';
 
 export const Popup = ({ closePopup, confirmAction, text, name }) => {
+
   return (
     <div className='popup'>
       <div className='popup__inner'>
@@ -24,3 +26,14 @@ export const Popup = ({ closePopup, confirmAction, text, name }) => {
     </div>
   );
 }
+
+Popup.propTypes = {
+  closePopup: PropTypes.func.isRequired,
+  confirmAction: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
+  name: PropTypes.string
+};
+
+Popup.defaultProps = {
+  name: '',
+};
