@@ -35,6 +35,11 @@
     justify-content: center;
   }
 
+  &__message {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &__confirm-btn,
   &__cancel-btn {
     width: 150px;

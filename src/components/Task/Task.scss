@@ -10,6 +10,13 @@
   cursor: pointer;
   z-index: 1;
 
+  &__name {
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   &__done {
     text-decoration: line-through;
   }
